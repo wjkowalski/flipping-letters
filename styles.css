@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    kerning: 2rem;
+}
+
+.text span {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+    color: white;
+    display: inline-block;
+    animation: animate 10s infinite;
+    animation-delay: calc(0.2s * var(--delay));
+}
+
+@keyframes animate {
+    0%, 50% {
+        transform: rotateY(1440deg);
+    }
+}
